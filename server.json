@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.PrestonsCreekCapital/cookie-free-analytics",
+  "title": "Cookie Free Analytics",
+  "description": "Cookieless web analytics MCP. Sites, pages, sources, live, funnels. EU-hosted.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.cookiefreeanalytics.com",
+  "repository": {
+    "url": "https://github.com/PrestonsCreekCapital/CookieFreeAnalytics-MCP",
+    "source": "github",
+    "id": "1348208421"
+  },
+  "icons": [
+    {
+      "src": "https://www.cookiefreeanalytics.com/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.cookiefreeanalytics.com/mcp"
+    }
+  ]
+}

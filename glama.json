@@ -1,0 +1,7 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": ["PrestonsCreekCapital"],
+  "name": "Cookie Free Analytics",
+  "description": "Cookieless web analytics MCP. Dashboard aggregates, EU-hosted, GDPR. Read-only.",
+  "category": "analytics"
+}
