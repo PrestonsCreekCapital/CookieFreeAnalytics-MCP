@@ -1,15 +1,15 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.PrestonsCreekCapital/cookie-free-analytics",
+  "name": "com.cookiefreeanalytics/mcp",
   "title": "Cookie Free Analytics",
-  "description": "Cookieless web analytics MCP. Sites, pages, sources, live, funnels. EU-hosted.",
-  "version": "1.0.0",
+  "description": "Cookieless dashboard aggregates for Claude and Cursor. No visitor hashes. Starter and Growth.",
   "websiteUrl": "https://www.cookiefreeanalytics.com",
   "repository": {
     "url": "https://github.com/PrestonsCreekCapital/CookieFreeAnalytics-MCP",
     "source": "github",
     "id": "1348208421"
   },
+  "version": "1.168.0",
   "icons": [
     {
       "src": "https://www.cookiefreeanalytics.com/icon-512.png",

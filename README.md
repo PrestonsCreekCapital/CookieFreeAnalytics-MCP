@@ -12,7 +12,7 @@ Operator: Prestons Creek Capital. Public contact: hello@cookiefreeanalytics.com.
 | MCP URL | `https://www.cookiefreeanalytics.com/mcp` |
 | Transport | Streamable HTTP |
 | Auth | OAuth 2.1 (RFC 9728 + PKCE). Optional hashed bearer from Account. |
-| Registry name | `io.github.PrestonsCreekCapital/cookie-free-analytics` |
+| Registry name | `com.cookiefreeanalytics/mcp` |
 | Docs | [docs/api](https://www.cookiefreeanalytics.com/docs/api) |
 
 Starter and Growth. Hobby is the dashboard only.
@@ -93,8 +93,12 @@ curl and scripts may still send `Authorization: Bearer` with a hashed token from
 | `get_sources` | Top sources |
 | `get_live` | Last pageview per visitor in five minutes (no heartbeat) |
 | `get_funnels` | Linear same-day funnels (Growth) |
+| `get_watch` | Uptime, TTFB, TLS, current state (Starter and Growth) |
+| `get_watch_incidents` | Open and recent Watch incidents (Starter and Growth) |
 
 `range` is `today`, `7d`, `30d`, `90d`, or `YYYY-MM-DD..YYYY-MM-DD`. `f` is the same filter string the dashboard puts in the URL.
+
+The server accepts protocol `2026-07-28` and the older handshake (`2025-11-25` back to `2024-11-05`). There is no package to run.
 
 ## Docs
 
