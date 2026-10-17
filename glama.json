@@ -1,7 +1,9 @@
 {
   "$schema": "https://glama.ai/mcp/schemas/server.json",
-  "maintainers": ["PrestonsCreekCapital"],
+  "maintainers": [
+    "PrestonsCreekCapital"
+  ],
   "name": "Cookie Free Analytics",
-  "description": "Cookieless web analytics MCP. Dashboard aggregates and Watch. EU-hosted, GDPR. Read-only.",
+  "description": "See your website visitors without a cookie banner. Cookieless, EU-hosted analytics for your AI app: traffic, top pages, uptime, add a website and get the tracking code. 5 tools free on Hobby.",
   "category": "analytics"
 }
