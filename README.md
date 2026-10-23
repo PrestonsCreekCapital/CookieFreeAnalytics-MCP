@@ -15,9 +15,12 @@ Operator: Prestons Creek Capital. Public contact: hello@cookiefreeanalytics.com.
 | Registry name | `com.cookiefreeanalytics/mcp` |
 | Docs | [docs/api](https://www.cookiefreeanalytics.com/docs/api) |
 
-Starter and Growth. Hobby is the dashboard only.
+See your website visitors without a cookie banner, from your AI app.
 
-The tools return the same aggregates as the dashboard. They do not return visitor hashes, raw IPs, or a user graph. They do not write pageviews, change settings, or send mail.
+- **Hobby (free):** 5 tools: `get_traffic_pulse`, `get_top_pages`, `get_watch_status`, `add_website`, `get_tracking_script`, with small daily limits.
+- **Starter and Growth:** all 13 tools.
+
+The read tools return the same totals as the dashboard. They never return visitor hashes, raw IPs, or a user graph. The only write is `add_website` (needs the `sites:write` permission you approve on the consent screen). Nothing deletes data, changes settings, or sends mail.
 
 ## Install
 
@@ -78,12 +81,24 @@ VS Code opens a browser for OAuth on first connect.
 
 1. The client `GET`s RFC 9728 metadata for `https://www.cookiefreeanalytics.com/mcp`.
 2. PKCE S256 + dynamic client registration. You do not paste a Client ID or Client Secret.
-3. Browser sign-in on cookiefreeanalytics.com. Starter or Growth.
+3. Browser sign-in on cookiefreeanalytics.com (any plan, Hobby included), then **Allow** on the consent screen. Scopes: `analytics:read`, `sites:write`.
 4. The client calls `POST /mcp` with the access token.
 
 curl and scripts may still send `Authorization: Bearer` with a hashed token from **Plan → Account → Read API** (`cfa_live_…`, shown once). Do not commit that token.
 
-## Tools (read-only)
+## Tools
+
+Free on Hobby:
+
+| Tool | Does | Hobby daily limit |
+|---|---|---|
+| `get_traffic_pulse` | Visitors, visits and pageviews for today, yesterday, the last 7 days and the 7 days before | 20 |
+| `get_top_pages` | Top 5 pages over the last 7 days | 10 |
+| `get_watch_status` | Are the watched pages up? | 10 |
+| `add_website` | Adds a website to your account (checks the address, skips duplicates, respects the plan's site limit) and returns its id | 10 |
+| `get_tracking_script` | The one line to paste, simple steps for WordPress, Wix, Squarespace, Shopify, Webflow, plain HTML and Google Tag Manager, a note to send your web person, and whether visits are arriving yet | 30 |
+
+Paid plans add:
 
 | Tool | Returns |
 |---|---|
